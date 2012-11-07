@@ -1,0 +1,339 @@
+
+/**
+ * lib.tx_adxgridelementsflexslider
+ */
+lib.tx_adxgridelementsflexslider {
+
+	default = COA
+	default {
+
+		stdWrap.wrap = <li class="{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}item"> | </li>
+
+		10 =< tt_content
+	}
+
+	images < tt_content.image.20
+	images {
+
+		layout >
+		layout = TEXT
+		layout.value = ###IMAGES###
+
+		imageStdWrap.dataWrap >
+		imageStdWrapNoWidth.wrap >
+
+		rendering {
+
+			globalCaption.allStdWrap >
+			globalCaption.rowStdWrap.wrap = <li> | </li>
+			globalCaption.lastRowStdWrap.wrap = <li> | </li>
+
+			noCaption.allStdWrap >
+			noCaption.rowStdWrap.wrap = <li> | </li>
+			noCaption.lastRowStdWrap.wrap = <li> | </li>
+
+			singleNoCaption.allStdWrap >
+			singleNoCaption.rowStdWrap.wrap = <li> | </li>
+			singleNoCaption.lastRowStdWrap.wrap = <li> | </li>
+		}
+	}
+
+	pagination = COA
+	pagination {
+
+		wrap = <li> | </li>
+
+		10 = COA
+		10 {
+
+			stdWrap.typolink.parameter.dataWrap = #c{field: uid}
+			stdWrap.typolink.ATagParams = onclick="javascript: return false;"
+
+			10 = TEXT
+			10 {
+				field = header // subheader
+				htmlSpecialChars = 1
+
+				wrap = <span class="header"> | </span>
+			}
+
+			20 = TEXT
+			20 {
+				if.isTrue.field = header
+
+				field = subheader
+				htmlSpecialChars = 1
+
+				wrap = <span class="subheader"><br /> | </span>
+			}
+		}
+	}
+}
+
+
+/**
+ * plugin.tx_gridelements_pi1.setup.tx_adxgridelementsflexslider
+ */
+plugin.tx_gridelements_pi1.setup.tx_adxgridelementsflexslider {
+
+	columns.0 {
+
+		renderObj = CASE
+		renderObj {
+
+			key.field = parentgrid_flexform_provider
+
+			default =< lib.tx_adxgridelementsflexslider.default
+
+			images =< lib.tx_adxgridelementsflexslider.images
+		}
+
+		preCObject = LOAD_REGISTER
+		preCObject {
+
+			containerClasses.cObject = COA
+			containerClasses.cObject {
+
+				10 = TEXT
+				10 {
+
+					value = {$plugin.tx_adxgridelementsflexslider.container.classes}
+					required = 1
+
+					replacement.10.search = /([^\s]+)/
+					replacement.10.replace = {$plugin.tx_adxgridelementsflexslider.cssClassPrefix}$1
+					replacement.10.useRegExp = 1
+
+					noTrimWrap = || |
+				}
+
+				20 = TEXT
+				20 {
+					field = flexform_layout
+					required = 1
+				}
+
+				stdWrap.insertData = 1
+				stdWrap.trim = 1
+			}
+
+			containerStyles.cObject = COA
+			containerStyles.cObject {
+
+				10 = TEXT
+				10 {
+					fieldRequired = flexform_height
+					field = flexform_height
+					wrap = height:|px;
+				}
+
+				20 = TEXT
+				20.value = {$plugin.tx_adxgridelementsflexslider.container.styles}
+
+				stdWrap.insertData = 1
+			}
+
+			containerAttributes.cObject = COA
+			containerAttributes.cObject {
+
+				10 = TEXT
+				10 {
+					data = register: containerClasses
+					required = 1
+					noTrimWrap = | class="|"|
+				}
+
+				20 = TEXT
+				20 {
+					data = register: containerStyles
+					required = 1
+					noTrimWrap = | style="|"|
+				}
+			}
+
+			containerSelector.cObject = COA
+			containerSelector.cObject {
+
+				10 = TEXT
+				10 {
+					field = uid
+					noTrimWrap = |#c| |
+				}
+
+				20 = TEXT
+				20 {
+
+					data = register: containerClasses
+
+					replacement.10.search = /\s+/
+					replacement.10.replace = .
+					replacement.10.useRegExp = 1
+
+					wrap = .|
+				}
+			}
+
+			jsInline1319014205.cObject = COA
+			jsInline1319014205.cObject {
+
+				stdWrap.outerWrap.cObject = COA
+				stdWrap.outerWrap.cObject {
+
+					10 = TEXT
+					10.data = register: jsInline1319014205
+
+					20 = TEXT
+					20.value = (function($){ $(document).ready(function(){ $('
+
+					30 = TEXT
+					30.data = register: containerSelector
+
+					40 = TEXT
+					40.value = ').flexslider({ | }); }); })(jQuery);
+				}
+
+				10 = TEXT
+				10.if.value.field = flexform_animation
+				10.if.equals = slide
+				10.value = animation:'slide',
+
+				15 = TEXT
+				15.if.value.field = flexform_slideDirection
+				15.if.equals = vertical
+				15.value = direction:'vertical',
+
+				20 = TEXT
+				20.if.isFalse.field = flexform_animationLoop
+				20.value = animationLoop:false,
+
+				25 = TEXT
+				25.if.isFalse.field = flexform_slideshow
+				25.value = slideshow:false,
+
+				30 = TEXT
+				30.fieldRequired = flexform_slideshowSpeed
+				30.dataWrap = slideshowSpeed:{field: flexform_slideshowSpeed},
+
+				35 = TEXT
+				35.fieldRequired = animationDuration
+				35.dataWrap = animationDuration:{field: flexform_animationDuration},
+
+				40 = TEXT
+				40.if.isFalse.field = flexform_directionNav
+				40.value = directionNav:false,
+
+				45 = TEXT
+				45.if.isFalse.field = flexform_controlNav
+				45.value = controlNav:false,
+
+				50 = TEXT
+				50.if.value.field = flexform_controlNav
+				50.if.equals = headers
+				50.value = manualControls:'.{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}control-nav li',
+
+				55 = TEXT
+				55.if.isFalse.field = flexform_keyboardNav
+				55.value = keyboardNav:false,
+
+				60 = TEXT
+				60.if.isTrue.field = flexform_mousewheel
+				60.value = mousewheel:true,
+
+				65 = TEXT
+				65.if.isFalse.field = flexform_pauseOnAction
+				65.value = pauseOnAction:false,
+
+				70 = TEXT
+				70.if.isTrue.field = flexform_pauseOnHover
+				70.value = pauseOnHover:true,
+
+				75 = TEXT
+				75.if.isTrue.field = flexform_randomize
+				75.value = randomize:true,
+
+				80 = TEXT
+				80.fieldRequired = flexform_slideToStart
+				80.dataWrap = slideToStart:{field: flexform_slideToStart},
+
+				# User defined options
+				85 = TEXT
+				85.fieldRequired = flexform_options
+				85.field = flexform_options
+				85.wrap = ,|
+
+				90 = TEXT
+				90.value = selector:'.{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}slides > li',
+
+				95 = TEXT
+				95.value = namespace:'{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}'
+			}
+		}
+
+		outerWrap = <div{register: containerAttributes}> | </div>
+		outerWrap.insertData = 1
+
+		outerWrap.cObject = TEMPLATE
+		outerWrap.cObject {
+
+			template = TEXT
+			template.value = <div###CLASS######STYLE###><ul class="{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}slides"> | </ul>###PAGINATION###</div>
+
+			marks {
+
+				CLASS = TEXT
+				CLASS {
+					data = register: containerClasses
+					required = 1
+					noTrimWrap = | class="|"|
+				}
+
+				STYLE = TEXT
+				STYLE {
+					data = register: containerStyles
+					required = 1
+					noTrimWrap = | style="|"|
+				}
+
+				PAGINATION = CASE
+				PAGINATION {
+
+					key.field = flexform_controlNav
+
+					headers = CONTENT
+					headers {
+
+						wrap = <ul class="{$plugin.tx_adxgridelementsflexslider.cssClassPrefix}control-nav"> | </ul>
+
+						table = tt_content
+
+						select {
+
+							andWhere = tx_gridelements_container = {field: uid} AND tx_gridelements_columns = 0
+							andWhere.insertData = 1
+							orderBy = tx_gridelements_columns ASC, sorting ASC
+							languageField = sys_language_uid
+						}
+
+						renderObj =< lib.tx_adxgridelementsflexslider.pagination
+					}
+
+					default = TEXT
+				}
+			}
+		}
+
+		includeFrontEndResources {
+
+			includeJS.1319014205 = {$plugin.tx_adxgridelementsflexslider.javaScriptFile}
+			includeJS.1319014205.disableCompression = 1
+			includeJS.1319014205.forceOnTop = 1
+
+			jsInline.1319014205 = TEXT
+			jsInline.1319014205 {
+				forceParse = 1
+				data = register: jsInline1319014205
+			}
+		}
+	}
+
+}

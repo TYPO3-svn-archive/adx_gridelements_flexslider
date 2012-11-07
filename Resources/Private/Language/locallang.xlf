@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_flexslider">
+		<header/>
+		<body>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Content Slider</source>
+			</trans-unit>
+			<trans-unit id="description" xml:space="preserve">
+				<source>Container for sliding content elements.</source>
+			</trans-unit>
+			<trans-unit id="columnName.0" xml:space="preserve">
+				<source>Slider elements</source>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+			</trans-unit>
+			<trans-unit id="flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+			</trans-unit>
+			<trans-unit id="flexform.provider" xml:space="preserve">
+				<source>Provider</source>
+			</trans-unit>
+			<trans-unit id="flexform.provider.default" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.provider.images" xml:space="preserve">
+				<source>Use first content element as single image provider</source>
+			</trans-unit>
+			<trans-unit id="flexform.provider.news" xml:space="preserve">
+				<source>Use first content element as news provider</source>
+			</trans-unit>
+			<trans-unit id="flexform.height" xml:space="preserve">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.rendering" xml:space="preserve">
+				<source>Rendering</source>
+			</trans-unit>
+			<trans-unit id="flexform.animation" xml:space="preserve">
+				<source>Transition effects</source>
+			</trans-unit>
+			<trans-unit id="flexform.animation.fade" xml:space="preserve">
+				<source>fade</source>
+			</trans-unit>
+			<trans-unit id="flexform.animation.slide" xml:space="preserve">
+				<source>slide</source>
+			</trans-unit>
+			<trans-unit id="flexform.animationLoop" xml:space="preserve">
+				<source>Animation loop</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideDirection" xml:space="preserve">
+				<source>Slide direction</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideDirection.horizontal" xml:space="preserve">
+				<source>horizontal</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideDirection.vertical" xml:space="preserve">
+				<source>vertical</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideshow" xml:space="preserve">
+				<source>Slideshow</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideshowSpeed" xml:space="preserve">
+				<source>Slideshow speed</source>
+			</trans-unit>
+			<trans-unit id="flexform.animationDuration" xml:space="preserve">
+				<source>Animation duration</source>
+			</trans-unit>
+			<trans-unit id="flexform.directionNav" xml:space="preserve">
+				<source>Browser</source>
+			</trans-unit>
+			<trans-unit id="flexform.controlNav" xml:space="preserve">
+				<source>Pagination</source>
+			</trans-unit>
+			<trans-unit id="flexform.controlNav.none" xml:space="preserve">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="flexform.controlNav.numbered" xml:space="preserve">
+				<source>Numbered</source>
+			</trans-unit>
+			<trans-unit id="flexform.controlNav.headers" xml:space="preserve">
+				<source>Headers</source>
+			</trans-unit>
+			<trans-unit id="flexform.keyboardNav" xml:space="preserve">
+				<source>Keyboard navigation</source>
+			</trans-unit>
+			<trans-unit id="flexform.mousewheel" xml:space="preserve">
+				<source>Mousewheel</source>
+			</trans-unit>
+			<trans-unit id="flexform.randomize" xml:space="preserve">
+				<source>Randomize</source>
+			</trans-unit>
+			<trans-unit id="flexform.pauseOnAction" xml:space="preserve">
+				<source>Pause on action</source>
+			</trans-unit>
+			<trans-unit id="flexform.pauseOnHover" xml:space="preserve">
+				<source>Pause on hover</source>
+			</trans-unit>
+			<trans-unit id="flexform.slideToStart" xml:space="preserve">
+				<source>Slide to start</source>
+			</trans-unit>
+			<trans-unit id="flexform.options" xml:space="preserve">
+				<source>User defined options</source>
+			</trans-unit>
+			<trans-unit id="template.prev" xml:space="preserve">
+				<source>Previous</source>
+			</trans-unit>
+			<trans-unit id="template.next" xml:space="preserve">
+				<source>Next</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

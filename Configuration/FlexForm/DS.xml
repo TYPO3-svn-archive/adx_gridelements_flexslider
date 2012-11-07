@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<tx_adxgridelementsflexslider_general>
+			<ROOT type="array">
+				<TCEforms>
+					<sheetTitle>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.sheet.general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					<layout type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.layout</label>
+							<config type="array">
+								<type>select</type>
+								<default type="string">layout1</default>
+								<items>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.layout.1</numIndex>
+										<numIndex index="1">layout1</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.layout.2</numIndex>
+										<numIndex index="1">layout2</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.layout.3</numIndex>
+										<numIndex index="1">layout3</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.layout.4</numIndex>
+										<numIndex index="1">layout4</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</layout>
+					<provider type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.provider</label>
+							<config type="array">
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.provider.default</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex> 
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.provider.images</numIndex>
+										<numIndex index="1">images</numIndex>
+									</numIndex> 
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.provider.news</numIndex>
+										<numIndex index="1">news</numIndex>
+									</numIndex> 
+								</items>
+							</config>
+						</TCEforms>
+					</provider>
+					<height type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.height</label>
+							<config type="array">
+								<type>input</type>
+								<size>5</size>
+								<eval>trim,int</eval>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</height>
+				</el>
+			</ROOT>
+		</tx_adxgridelementsflexslider_general>
+		<tx_adxgridelementsflexslider_rendering type="array">
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xfl:flexform.sheet.rendering</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el type="array">
+					<animation type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.animation</label>
+							<config type="array">
+								<type>select</type>
+								<size>1</size>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.animation.fade</numIndex>
+										<numIndex index="1">fade</numIndex>
+									</numIndex> 
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.animation.slide</numIndex>
+										<numIndex index="1">slide</numIndex>
+									</numIndex> 
+								</items>
+							</config>
+						</TCEforms>
+					</animation>
+					<slideDirection type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideDirection</label>
+							<config type="array">
+								<type>select</type>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideDirection.horizontal</numIndex>
+										<numIndex index="1">horizontal</numIndex>
+									</numIndex> 
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideDirection.vertical</numIndex>
+										<numIndex index="1">vertical</numIndex>
+									</numIndex> 
+								</items>
+							</config>
+						</TCEforms>
+					</slideDirection>
+					<animationLoop type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.animationLoop</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</animationLoop>
+					<slideshow type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideshow</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</slideshow>
+					<slideshowSpeed type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideshowSpeed</label>
+							<config type="array">
+								<type>input</type>
+								<size>8</size>
+								<eval>int</eval>
+								<default>7000</default>
+							</config>
+						</TCEforms>
+					</slideshowSpeed>
+					<animationDuration type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.animationDuration</label>
+							<config type="array">
+								<type>input</type>
+								<size>8</size>
+								<default>600</default>
+							</config>
+						</TCEforms>
+					</animationDuration>
+					<directionNav type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.directionNav</label>
+							<config type="array">
+								<type>check</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</directionNav>
+					<controlNav type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.controlNav</label>
+							<config type="array">
+								<type>select</type>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.controlNav.none</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex> 
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.controlNav.numbered</numIndex>
+										<numIndex index="1">numbered</numIndex>
+									</numIndex> 
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.controlNav.headers</numIndex>
+										<numIndex index="1">headers</numIndex>
+									</numIndex> 
+								</items>
+							</config>
+						</TCEforms>
+					</controlNav>
+					<keyboardNav type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.keyboardNav</label>
+							<config type="array">
+								<type>check</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</keyboardNav>
+					<mousewheel type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.mousewheel</label>
+							<config type="array">
+								<type>check</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</mousewheel>
+					<pauseOnAction type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.pauseOnAction</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</pauseOnAction>
+					<pauseOnHover type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.pauseOnHover</label>
+							<config type="array">
+								<type>check</type>
+								<default type="integer">1</default>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</pauseOnHover>
+					<randomize type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.randomize</label>
+							<config type="array">
+								<type>check</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:lang/locallang_core.xml:labels.enabled</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</randomize>
+					<slideToStart type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.slideToStart</label>
+							<config type="array">
+								<type>input</type>
+								<size>8</size>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</slideToStart>
+					<options type="array">
+						<TCEforms type="array">
+							<label>LLL:EXT:adx_gridelements_flexslider/Resources/Private/Language/locallang.xlf:flexform.options</label>
+							<config type="array">
+								<type>text</type>
+								<cols>50</cols>
+							</config>
+						</TCEforms>
+					</options>
+				</el>
+			</ROOT>
+		</tx_adxgridelementsflexslider_rendering>
+	</sheets>
+</T3DataStructure>

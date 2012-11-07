@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2012-06-13T20:22:32Z" product-name="adx_gridelements_flexslider">
+		<header/>
+		<body>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Content Slider</source>
+				<target state="translated">Content Slider</target>
+			</trans-unit>
+			<trans-unit id="description" xml:space="preserve">
+				<source>Container for sliding content elements.</source>
+				<target state="translated">Container für "slidende" Seiteninhalte.</target>
+			</trans-unit>
+			<trans-unit id="columnName.0" xml:space="preserve">
+				<source>Slider elements</source>
+				<target state="translated">Slider-Elemente</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.general" xml:space="preserve">
+				<source>General</source>
+				<target state="translated">Allgemein</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout" xml:space="preserve">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.0" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.1" xml:space="preserve">
+				<source>Layout 1</source>
+				<target state="translated">Layout 1</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.2" xml:space="preserve">
+				<source>Layout 2</source>
+				<target state="translated">Layout 2</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.3" xml:space="preserve">
+				<source>Layout 3</source>
+				<target state="translated">Layout 3</target>
+			</trans-unit>
+			<trans-unit id="flexform.layout.4" xml:space="preserve">
+				<source>Layout 4</source>
+				<target state="translated">Layout 4</target>
+			</trans-unit>
+			<trans-unit id="flexform.provider" xml:space="preserve">
+				<source>Provider</source>
+				<target state="translated">Provider</target>
+			</trans-unit>
+			<trans-unit id="flexform.provider.default" xml:space="preserve">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="flexform.provider.images" xml:space="preserve">
+				<source>Use first content element as single image provider</source>
+				<target state="translated">Verwende ersten Seiteninhalt als Bilder-Provider</target>
+			</trans-unit>
+			<trans-unit id="flexform.provider.news" xml:space="preserve">
+				<source>Use first content element as news provider</source>
+				<target state="translated">Verwende ersten Seiteninhalt als News-Provider</target>
+			</trans-unit>
+			<trans-unit id="flexform.height" xml:space="preserve">
+				<source>Height</source>
+				<target state="translated">Höhe</target>
+			</trans-unit>
+			<trans-unit id="template.prev" xml:space="preserve">
+				<source>Previous</source>
+				<target state="translated">Zurück</target>
+			</trans-unit>
+			<trans-unit id="template.next" xml:space="preserve">
+				<source>Next</source>
+				<target state="translated">Weiter</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

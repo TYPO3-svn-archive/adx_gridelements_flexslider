@@ -1,4 +1,6 @@
 
+includeLibs.t3jquery = EXT:t3jquery/class.tx_t3jquery.php
+
 /**
  * lib.tx_adxgridelementsflexslider
  */
@@ -172,24 +174,32 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsflexslider {
 					wrap = .|
 				}
 			}
+		}
 
-			jsInline1319014205.cObject = COA
-			jsInline1319014205.cObject {
+		append = USER
+		append {
+
+			userFunc = tx_t3jquery->addJS
+
+			compress = 1
+			tofooter = 1
+
+			jsfile = {$plugin.tx_adxgridelementsflexslider.javaScriptFile}
+
+			jsdata.cObject = COA
+			jsdata.cObject {
 
 				stdWrap.outerWrap.cObject = COA
 				stdWrap.outerWrap.cObject {
 
 					10 = TEXT
-					10.data = register: jsInline1319014205
+					10.value = (function($){ $(document).ready(function(){ $('
 
 					20 = TEXT
-					20.value = (function($){ $(document).ready(function(){ $('
+					20.data = register: containerSelector
 
 					30 = TEXT
-					30.data = register: containerSelector
-
-					40 = TEXT
-					40.value = ').flexslider({ | }); }); })(jQuery);
+					30.value = ').flexslider({ | }); }); })(jQuery);
 				}
 
 				10 = TEXT
@@ -321,19 +331,5 @@ plugin.tx_gridelements_pi1.setup.tx_adxgridelementsflexslider {
 				}
 			}
 		}
-
-		includeFrontEndResources {
-
-			includeJS.1319014205 = {$plugin.tx_adxgridelementsflexslider.javaScriptFile}
-			includeJS.1319014205.disableCompression = 1
-			includeJS.1319014205.forceOnTop = 1
-
-			jsInline.1319014205 = TEXT
-			jsInline.1319014205 {
-				forceParse = 1
-				data = register: jsInline1319014205
-			}
-		}
 	}
-
 }
